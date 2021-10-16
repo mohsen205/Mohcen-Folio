@@ -1,0 +1,32 @@
+.h1{
+    font-size: 80px;
+    line-height: 90px;
+    font-weight: bold;
+    padding: 30px 0px;
+}
+.btn{
+    background-color: var(--purple-b);
+    color: white;
+    font-weight: 500;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+    min-width: 220px;
+}
+.btn:hover{
+    margin-bottom: 20px;
+}
+.icons{
+    font-size: 23px;
+    position: relative;
+    left: 0px;
+    top: -3px;
+}
+@media (max-width: 991.98px) {
+     .h1{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    padding: 10px 0px 20px 0px;
+
+}
+}

@@ -1,0 +1,65 @@
+:root {
+  --purple-b : #DAF;
+  --purple-w : #A5F
+}
+.text-purple {
+  color: var(--purple-w) !important;
+}
+body{
+  height: 1500px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+button {
+  background: none;
+  border: none;
+}
+.home {
+  background-image: url("../public/bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+/*Model*/
+.modal-content {
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  border: none;
+}
+.modal {
+  background-color: white;
+  padding-right: 0px !important;
+}
+/*form*/
+.form-control {
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--purple-b);
+}
+textarea {
+  height: 120px;
+}
+
+.h4 {
+  margin-bottom: 0px;
+}
+.bg-white{
+  background-color: white !important;
+}
+.pr-9{
+  position: relative;
+  top: -9px;
+}
+@media (min-width: 576px){
+  .modal-dialog {
+      max-width: 100%; 
+      margin: 0px;
+  }
+}

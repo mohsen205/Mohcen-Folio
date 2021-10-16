@@ -1,0 +1,67 @@
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000ad;
+  transition: all 0.5s ease-in-out;
+  z-index: -20;
+}
+.header {
+    padding: 20px 0px;
+    z-index: 2;
+}
+.linkBrand:hover{
+  color: black;
+}
+.linkList li{
+  float: left;
+  margin-left: 15px;
+}
+.closeBtn {
+  height: 0px;
+  width: 0px;
+  visibility: hidden;
+}
+.linkItem {
+  font-weight: 500;
+  transition: all 0.1s ease-in ;
+}
+.linkItem:hover{
+  color: #A5F !important;
+}
+.openBtn{
+  display: none;
+}
+.brandName{
+    box-shadow: unset;
+}
+/*Media query*/
+@media (max-width: 991.98px) { 
+  
+  .openBtn {
+    display: unset;
+  }
+  .linkList {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    background: white;
+    height: 100%;
+    width: 0px;
+    overflow-x: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+    .closeBtn {
+    visibility: visible;
+    width: 100%;
+    padding: 15px 10px;
+  }
+  .header .list-unstyled{
+    margin-top: 30px;
+  }
+  .linkList li{
+    float: unset;
+    margin-left: 20px;
+  }
+ }

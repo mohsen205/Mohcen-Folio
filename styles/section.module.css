@@ -1,0 +1,12 @@
+.btn{
+    letter-spacing: 2px;
+    transition: all 0.4s ease-in-out;
+    float: left;
+    font-weight: 500;
+}
+.btn:hover {
+    color: var(--purple-w);
+}
+.href:hover {
+    color : var(--purple-w) !important;
+}

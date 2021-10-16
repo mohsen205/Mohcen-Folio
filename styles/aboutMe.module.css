@@ -1,0 +1,22 @@
+.icons {
+    float: left;
+    margin-right: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.icons:hover{
+   font-size: 2rem;
+   margin-bottom: 10px;
+   color: var(--purple-w);
+}
+.imageContainer{
+    width: 100%;
+}
+.imageContainer > div {
+    position: unset !important;
+}
+.image {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }

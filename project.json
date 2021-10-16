@@ -1,0 +1,74 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "weather app",
+            "image": "/images/img-6.jpg",
+            "category": "app",
+            "url": "#"
+        },
+        {
+            "id": 2,
+            "title": "e-commerce cloths",
+            "image": "/images/img-2.jpg",
+            "category": "web",
+            "url": "#"
+        },
+        {
+            "id": 3,
+            "title": "covid tracker",
+            "image": "/images/img-3.jpg",
+            "category": "app",
+            "url": "#"
+        },
+        {
+            "id": 4,
+            "title": "Ai company",
+            "image": "/images/img-4.jpg",
+            "category": "web",
+            "url": "#"
+        },
+        {
+            "id": 5,
+            "title": "Protflio",
+            "image": "/images/img-7.jpg",
+            "category": "ui",
+            "url": "#"
+        },
+        {
+            "id": 6,
+            "title": "food restanrent",
+            "image": "/images/img-8.jpg",
+            "category": "ui",
+            "url": "#"
+        },
+        {
+            "id": 7,
+            "title": "anime list",
+            "image": "/images/img-9.jpg",
+            "category": "web",
+            "url": "#"
+        },
+        {
+            "id": 8,
+            "title": "netflix clone",
+            "image": "/images/img-10.jpg",
+            "category": "app",
+            "url": "#"
+        },
+        {
+            "id": 9,
+            "title": "doctor meeting",
+            "image": "/images/img-1.jpg",
+            "category": "web",
+            "url": "#"
+        },
+        {
+            "id": 10,
+            "title": "to do list",
+            "image": "/images/img-5.jpg",
+            "category": "ui",
+            "url": "#"
+        }
+    ]
+}

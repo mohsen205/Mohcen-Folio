@@ -1,0 +1,25 @@
+.text{
+    font-size: 20px;
+    max-width: 440px;
+}
+.btn {
+    color: white;
+    background-color: var(--purple-w);
+    padding: 10px;
+    width: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.fw{
+    font-weight: 500;
+}
+.minWidth {
+    min-width: 340px;
+}
+@media (max-width: 991.98px) {
+    .minWidth {
+        min-width: 300px;
+        margin-top: 30px;
+    }
+}
