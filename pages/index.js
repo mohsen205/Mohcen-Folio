@@ -4,7 +4,8 @@ import Mean from "../components/home"
 import Modal from "../components/modal"
 import AboutMe from "../components/aboutMe"
 import Section from "../components/section"
-const Home = ({ projects }) => {
+import projects from "../project.json"
+const Home = () => {
   return (
     <>
       <Header />
@@ -26,13 +27,3 @@ const Home = ({ projects }) => {
 }
 
 export default Home
-
-export async function getStaticProps() {
-  const response = await fetch("http://localhost:3000/api")
-  const data = await response.json()
-  return {
-    props: {
-      projects: data
-    }
-  }
-}
