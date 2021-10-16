@@ -5,9 +5,6 @@
 .text-purple {
   color: var(--purple-w) !important;
 }
-body{
-  height: 1500px;
-}
 a{
   text-decoration: none;
   color: black;
