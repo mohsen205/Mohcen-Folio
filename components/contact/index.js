@@ -2,7 +2,7 @@ import contact from "../../styles/contact.module.css"
 import { Formik, Form, Field, ErrorMessage } from "formik"
 import * as Yup from "yup"
 import { RiSendPlaneFill } from "react-icons/ri"
-import Error from "../Error"
+import Error from "../error"
 import axios from "axios"
 const initialValues = {
     name: "",
