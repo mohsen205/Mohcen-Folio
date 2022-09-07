@@ -1,4 +1,9 @@
-:root {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* :root {
   --purple-b : #DAF;
   --purple-w : #A5F
 }
@@ -19,7 +24,7 @@ button {
   background-size: cover;
 }
 /*Model*/
-.modal-content {
+/* .modal-content {
   border-radius: 0px;
   margin: 0px;
   padding: 0px;
@@ -29,18 +34,17 @@ button {
 .modal {
   background-color: white;
   padding-right: 0px !important;
-}
-/*form*/
+}*/
+
 .form-control {
   border-radius: 0px;
-  border: none;
-  border-bottom: 1px solid;
+  border: 1px solid;
 }
 .form-control:focus {
   box-shadow: none;
-  border-color: var(--purple-b);
+  border-color: black;
 }
-textarea {
+/* textarea {
   height: 120px;
 }
 
@@ -59,4 +63,4 @@ textarea {
       max-width: 100%; 
       margin: 0px;
   }
-}
+}   */

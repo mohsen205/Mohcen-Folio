@@ -1,77 +1,42 @@
-import React, { useEffect, useState } from 'react'
-import Link from "next/link"
-import { RiBarChartHorizontalLine } from "react-icons/ri"
-import { IoMdClose } from "react-icons/io"
-import nav from "../../styles/navbar.module.css"
+import Link from "@mui/material/Link";
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { AiOutlineTwitter, AiOutlineInstagram } from "react-icons/ai";
+import Container from "@mui/material/Container";
+import { styled } from "@mui/material";
+const StyledLink = styled(Link)(({ theme }) => ({
+  fontSize: "calc((1.2 - 1) * 1.2vw + 1rem)",
+  color: "black",
+  "&:hover": {
+    color: "black",
+  },
+}));
 const Navbar = () => {
-    const [onTop, setOnTop] = useState(true)
-    const [isOpen, setIsOpen] = useState(false)
-    useEffect(() => {
-        document.addEventListener("scroll", function () {
-            if (window.scrollY >= 250) {
-                setOnTop(false)
-            } else if (window.scrollY <= 250) {
-                setOnTop(true)
-            }
-        })
-    })
-    return (
-        <>
-            {/* <div className={nav.overlay}
-                onClick={() => setIsOpen(false)}
-                style={{ zIndex: `${isOpen ? "19" : "-20"}` }}>
-            </div> */}
-            <div className={onTop ? `${nav.header}` : `${nav.header} position-fixed w-100 bg-white shadow-lg`}>
-                <div className="container">
-                    <div className="d-flex justify-content-between">
-                        <div className={nav.brandName}>
-                            <Link href="/">
-                                <a className={`fw-bold ${nav.linkBrand}`}>Mohcen<span className="text-purple">!</span></a>
-                            </Link>
-                        </div>
-                        <div className={nav.linkList} style={{ width: `${isOpen ? "250px" : ""}` }}>
-                            <div className={`${nav.closeBtn} d-flex justify-content-end `} >
-                                <button className="fs-3" onClick={() => setIsOpen(false)}>
-                                    <IoMdClose />
-                                </button>
-                            </div>
-                            <ul className="list-unstyled">
-                                <li className="list-link">
-                                    <Link href="/">
-                                        <a className={nav.linkItem}> Home </a>
-                                    </Link>
-                                </li>
-                                <li className="list-link">
-                                    <Link href="/">
-                                        <a className={nav.linkItem}> Projects </a>
-                                    </Link>
-                                </li>
-                                <li className="list-link">
-                                    <button type="button" className={nav.linkItem} data-bs-toggle="modal" data-bs-target="#about">
-                                        About Me
-                                    </button>
-                                </li>
-                                <li className="list-link">
-                                    <button type="button" className={nav.linkItem} data-bs-toggle="modal" data-bs-target="#contact">
-                                        Contact
-                                    </button>
-                                </li>
+  return (
+    <Box>
+      <Container>
+        <Stack direction="row" justifyContent="space-between">
+          <Typography
+            component="p"
+            sx={{
+              fontSize: "calc((2 - 1) * 1.2vw + 1rem)",
+            }}
+          >
+            Mohcen Mnassri
+          </Typography>
+          <Stack direction="row" spacing={2}>
+            <StyledLink href="https://www.instagram.com/mohcen_mn/">
+              <AiOutlineInstagram />
+            </StyledLink>
+            <StyledLink href="https://twitter.com/Mohcen_mn">
+              <AiOutlineTwitter />
+            </StyledLink>
+          </Stack>
+        </Stack>
+      </Container>
+    </Box>
+  );
+};
 
-                            </ul>
-                        </div>
-                        <div className={nav.openBtn}>
-                            <button type="button" className={nav.openBtn} onClick={() => setIsOpen(true)}>
-                                <RiBarChartHorizontalLine />
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}
-
-export default Navbar
-/*
-
-*/
+export default Navbar;
